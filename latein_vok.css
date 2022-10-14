@@ -1,24 +1,20 @@
-#button_l1{
+button{
   background-color: rgb(180, 180, 180);
   border: none;
   color: white;
   padding: 15px 32px;
   font-size: 16px;
-}
-#button_l2{
-    background-color: rgb(180, 180, 180);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    font-size: 16px;
-}
-#button_l3{
-    background-color: rgb(180, 180, 180);
-    border: none;
-    color:white;
-    padding: 15px 32px;
-    font-size: 16px;
+  margin: 10px;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+}
+.abfrage{
+  display: none;
+}
+#deutsch_latein{
+  color: white;
+}
+#latein_deutsch{
+  color: white;
 }
