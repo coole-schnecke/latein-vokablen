@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Latein am Morgen vertreibt Kummer und Sorgen</title>
     <link rel="stylesheet" href="latein_vok.css">
 </head>
 <body>
-    <h1>
-    <button id="button_l1" onclick="vokl1_in_array()">l1</button>
-    <button id= "button_l2" onclick="vokl2_in_array()">l2</button>
-    <button id= "button_l3" onclick="starte()">grün weg hexhex</button>
-    </h1>
-    <button onclick="neue_vok_anzeigen()">wtf alta</button>
+    <div>
+        <button class="button einstellungen" id="button_l1" onclick="farbe_button_l1()">l1</button>
+        <button class="button einstellungen" id="button_l2" onclick="farbe_button_l2()">l2</button>
+    </div>
+    <div>
+        <button class="button einstellungen" id="button_latein-deutsch" onclick="latein_deutsch()">Latein - Deutsch</button>
+        <button class="button einstellungen" id="button_deutsch-latein" onclick="deutsch_latein()">Deutsch - Latein</button>
+    </div>
+    <div>
+        <button class="button einstellungen" id="button_start" onclick="starte()">start</button>
+    </div>
+    <div>
+        <p class="abfrage" id="vokabel">fgfg cgvh</p>
+        <button class="button abfrage" id="button_uebersetzung" onclick="uebersetzung_anzeigen()">Übersetzung zeigen</button>
+        <p class="abfrage" id="uebersetzung">fgjk</p>
+        <button class="button abfrage" id="button_grammatik" onclick="grammatik_anzeigen()">Grammatik zeigen</button>
+        <p class="abfrage" id="grammatik">hjbn bn b bn n</p>
+    </div>
+    <div>
+        <button class="abfrage button" id="button_naechste_vok" onclick="neue_vok_anzeigen()">nächste Vokabel anzeigen</button>
+    </div>
     <p id="array_length"></p>
-    <p id="vokabel"></p>
+    
     <script src="latein_vok.js"></script>
 </body>
 </html>
