@@ -106,7 +106,7 @@ function grammatik_anzeigen(){
 uebersetzung_wert = 0
 
 function uebersetzung_anzeigen(){
-    if(grammatik_wert == 0){
+    if(uebersetzung_wert == 0){
         document.getElementById("uebersetzung").style.display = "block";
         document.getElementById("button_uebersetzung").innerHTML = "Übersetzung verbergen";
         uebersetzung_wert = 1;
