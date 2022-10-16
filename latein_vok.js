@@ -9,8 +9,8 @@ class vokabel {
 var fabeln1_1w1 = new vokabel('poenas dare', 'bestraft werden', ' ');
 var fabeln1_1w2 = new vokabel('residere', 'sitzen', 'resideo, resedi, resessum');
 var fabeln1_1w3 = new vokabel('abor', 'Baum', 'aboris f.');
-var fabeln1_1w4 = new vokabel('invidere', 'invideo, invidi, invisum', 'beneiden');
-var fabeln1_1w5 = new vokabel('incipere', 'incipio, coepi, inceptum', 'anfangen');
+var fabeln1_1w4 = new vokabel('invidere', 'beneiden', 'invideo, invidi, invisum');
+var fabeln1_1w5 = new vokabel('incipere', 'anfangen', 'incipio, coepi, inceptum');
 var fabeln1_1w6 = new vokabel('loqui', 'sprechen', 'loqui, loquor, locutus sum');
 var fabeln1_1w7 = new vokabel('foret', 'entspricht "esset"', ' ');
 var fabeln1_1w8 = new vokabel('emittere', 'verlieren', 'emitto, emisi, emissum');
