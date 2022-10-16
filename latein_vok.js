@@ -6,13 +6,13 @@ class vokabel {
     }
 }
 
-var fabeln1_1w1 = new vokabel('poenas dare', 'bestraft werden', '');
+var fabeln1_1w1 = new vokabel('poenas dare', 'bestraft werden', ' ');
 var fabeln1_1w2 = new vokabel('residere', 'sitzen', 'resideo, resedi, resessum');
 var fabeln1_1w3 = new vokabel('abor', 'Baum', 'aboris f.');
 var fabeln1_1w4 = new vokabel('invidere', 'invideo, invidi, invisum', 'beneiden');
 var fabeln1_1w5 = new vokabel('incipere', 'incipio, coepi, inceptum', 'anfangen');
 var fabeln1_1w6 = new vokabel('loqui', 'sprechen', 'loqui, loquor, locutus sum');
-var fabeln1_1w7 = new vokabel('foret', 'entspricht "esset"', '');
+var fabeln1_1w7 = new vokabel('foret', 'entspricht "esset"', ' ');
 var fabeln1_1w8 = new vokabel('emittere', 'verlieren', 'emitto, emisi, emissum');
 var fabeln1_1w9 = new vokabel('dolosus', 'listig', '-a, -um');
 var fabeln1_1w10 = new vokabel ('avidus', 'gierig', '-a, -um');
@@ -39,11 +39,14 @@ function deutsch_latein(){
         document.getElementById("button_deutsch-latein").style.color = "green";
         document.getElementById("button_latein-deutsch").style.color = "white";
         farbe_start_button();
-        richtung = 1
     }else{
         deutsch_latein_wert = 0
         document.getElementById("button_deutsch-latein").style.color = "white";
         farbe_start_button();
+    }
+    if (richtung == 0){
+        richtung = 1;
+        
     }
 }
 
@@ -56,11 +59,13 @@ function latein_deutsch(){
         document.getElementById("button_deutsch-latein").style.color = "white";
         document.getElementById("button_latein-deutsch").style.color = "green";
         farbe_start_button();
-        richtung = 0
     }else{
         latein_deutsch_wert = 0;
         document.getElementById("button_latein-deutsch").style.color = "white";
         farbe_start_button();
+    }
+    if (richtung == 0){
+        richtung = 0;
     }
 }
 
