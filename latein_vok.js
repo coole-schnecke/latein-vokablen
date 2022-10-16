@@ -44,10 +44,7 @@ function deutsch_latein(){
         document.getElementById("button_deutsch-latein").style.color = "white";
         farbe_start_button();
     }
-    if (richtung == 0){
-        richtung = 1;
-        
-    }
+    richtung = 1;
 }
 
 function latein_deutsch(){
@@ -64,9 +61,7 @@ function latein_deutsch(){
         document.getElementById("button_latein-deutsch").style.color = "white";
         farbe_start_button();
     }
-    if (richtung == 0){
-        richtung = 0;
-    }
+    richtung = 0;
 }
 
 function neue_vok_anzeigen(){
