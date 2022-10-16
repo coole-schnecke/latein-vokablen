@@ -1,24 +1,27 @@
 class vokabel {
-    constructor(latein, deutsch, grammatik, wortart) {
+    constructor(latein, deutsch, grammatik) {
         this.deutsch = deutsch;
         this.latein = latein;
         this.grammatik = grammatik;
-        this.wortart = wortart;
     }
 }
 
-var l1w1 = new vokabel('catella', 'Hündchen', 'catellae f.', 'Substantiv');
-var l1w2 = new vokabel('catella2', 'Hündchen2', 'catellae f.2', 'Substantiv2');
-var l1w3 = new vokabel('catella3', 'Hündchen3', 'catellae f.3', 'Substantiv3');
-var l1w4 = new vokabel('catella4', 'Hündchen4', 'catellae f.4', 'Substantiv4');
-var l1w5 = new vokabel('catella5', 'Hündchen5', 'catellae f.5', 'Substantiv5');
-var l1w6 = new vokabel('catella6', 'Hündchen6', 'catellae f.6', 'Substantiv6');
-var l1w7 = new vokabel('catella7', 'Hündchen7', 'catellae f.7', 'Substantiv7');
-var l1w8 = new vokabel('catella8', 'Hündchen8', 'catellae f.8', 'Substantiv8');
-var l1w9 = new vokabel('catella9', 'Hündchen9', 'catellae f.9', 'Substantiv9');
+var fabeln1_1w1 = new vokabel('poenas dare', 'Hündchen', '');
+var fabeln1_1w2 = new vokabel('residere', 'sitzen', 'resideo, resedi, resessum');
+var fabeln1_1w3 = new vokabel('abor', 'Baum', 'aboris f.');
+var fabeln1_1w4 = new vokabel('invidere', 'invideo, invidi, invisum', 'beneiden');
+var fabeln1_1w5 = new vokabel('incipere', 'incipio, coepi, inceptum', 'anfangen');
+var fabeln1_1w6 = new vokabel('loqui', 'sprechen', 'loqui, loquor, locutus sum');
+var fabeln1_1w7 = new vokabel('foret', 'entspricht "esset"', '');
+var fabeln1_1w8 = new vokabel('emittere', 'verlieren', 'emitto, emisi, emissum');
+var fabeln1_1w9 = new vokabel('dolosus', 'listig', '-a, -um');
+var fabeln1_1w10 = new vokabel ('avidus', 'gierig', '-a, -um');
+var fabeln1_1w11 = new vokabel ('vulpes', 'Fuchs', 'vulpis f.');
+var fabeln1_1w12 = new vokabel ('corvus', 'Rabe', 'corvi m.');
 
-var l1 = [l1w1, l1w2, l1w3, l1w4]
-var l2 = [l1w5, l1w6, l1w7, l1w8, l1w9]
+
+var l1 = [fabeln1_1w1, fabeln1_1w2, fabeln1_1w3, fabeln1_1w4, fabeln1_1w5, fabeln1_1w6, fabeln1_1w7, fabeln1_1w8, fabeln1_1w9, fabeln1_1w10, fabeln1_1w11, fabeln1_1w12]
+var l2 = []
 var zu_bearbeiten = []
 var auswahl = 0
 
