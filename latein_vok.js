@@ -6,7 +6,7 @@ class vokabel {
     }
 }
 
-var fabeln1_1w1 = new vokabel('poenas dare', 'Hündchen', '');
+var fabeln1_1w1 = new vokabel('poenas dare', 'bestraft werden', '');
 var fabeln1_1w2 = new vokabel('residere', 'sitzen', 'resideo, resedi, resessum');
 var fabeln1_1w3 = new vokabel('abor', 'Baum', 'aboris f.');
 var fabeln1_1w4 = new vokabel('invidere', 'invideo, invidi, invisum', 'beneiden');
