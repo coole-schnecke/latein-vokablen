@@ -54,7 +54,7 @@ var fabeln2_1w6 = new vokabel('latro', 'Räuber', 'latronis m.');
 var fabeln2_1w7 = new vokabel('bibere', 'trinken', 'bibo, bibi, -');
 var fabeln2_1w8 = new vokabel('qui?', 'wie?', '-');
 var fabeln2_1w9 = new vokabel('queri', 'sich beklagen', 'queror, questus sum');
-var fabeln2_1w10 = new vokabel('ait', 'er/sie/es sagt(e)', '');
+var fabeln2_1w10 = new vokabel('ait', 'er/sie/es sagt(e)', '-');
 var fabeln2_1w11 = new vokabel('maledicere', 'beleidigen', 'maledico, maledixi, maledictum (+Dat)');
 var fabeln2_1w12 = new vokabel('corripere', 'packen, gewaltsam an sich reißen', 'corripio, corripi, correptum');
 var fabeln2_1w13 = new vokabel('iniustus', '-a, -um', 'ungerecht');
@@ -64,10 +64,51 @@ var fabeln2_1w16 = new vokabel('innocens', 'unschuldig', 'innocentis');
 var fabeln2_1w17 = new vokabel('opprimere', 'unterdrücken, knechten', 'opprimo, oppressi, oppressum');
 var fabeln2_1w18 = new vokabel ('inferior', 'weiter unten', '-');
 
+var fabeln3_1w1 = new vokabel('rana', 'Frosch', 'ranae f.');
+var fabeln3_1w2 = new vokabel('bos', 'Ochse', 'bovis m.');
+var fabeln3_1w3 = new vokabel('inops', 'mittellos, arm', 'inopis');
+var fabeln3_1w4 = new vokabel('inopia', 'Not, Mangel', 'inopiae f.');
+var fabeln3_1w5 = new vokabel('qoundam', 'einst', 'Adv.');
+var fabeln3_1w6 = new vokabel('invidia', 'Neid', 'invidiae f.');
+var fabeln3_1w7 = new vokabel('invidere', 'beneiden', 'invideo, invidi, invisum');
+var fabeln3_1w8 = new vokabel('natus', 'Sohn', 'nati m.');
+var fabeln3_1w9 = new vokabel('nata', 'Tochter', 'natae f.');
+var fabeln3_1w10 = new vokabel('similis', 'ähnlich, gleich(artig)', 'simile');
+var fabeln3_1w11 = new vokabel('indignari', 'böse werden', 'indignaror, indignatus sum');
+var fabeln3_1w12 = new vokabel('validus', 'kräftig', '-a, um');
+var fabeln3_1w13 = new vokabel('rumpere', 'brechen, bersten', 'rumpo, rupi, ruptum');
+
+var fabeln3_1w14 = new vokabel('frangere', '(zer)brechen', 'frango, fregi, fractum');
+var fabeln3_1w15 = new vokabel('pati', 'erdulden, ertrage', 'patior, passus sum');
+
+var fabeln8w1 = new vokabel('', '', '');
+var fabeln8w2 = new vokabel('', '', '');
+var fabeln8w3 = new vokabel('', '', '');
+var fabeln8w4 = new vokabel('', '', '');
+var fabeln8w5 = new vokabel('', '', '');
+var fabeln8w6 = new vokabel('', '', '');
+var fabeln8w7 = new vokabel('', '', '');
+var fabeln8w8 = new vokabel('', '', '');
+var fabeln8w9 = new vokabel('', '', '');
+var fabeln8w10 = new vokabel('', '', '');
+var fabeln8w11 = new vokabel('', '', '');
+var fabeln8w12 = new vokabel('', '', '');
+var fabeln8w13 = new vokabel('', '', '');
+var fabeln8w14 = new vokabel('', '', '');
+var fabeln8w15 = new vokabel('', '', '');
+var fabeln8w16 = new vokabel('', '', '');
+var fabeln8w17 = new vokabel('', '', '');
+var fabeln8w18 = new vokabel('', '', '');
+var fabeln8w19 = new vokabel('', '', '');
+var fabeln8w20 = new vokabel('', '', '');
+var fabeln8w21 = new vokabel('', '', '');
+
 //hier neue dazu
 var fabeln1_1 = [fabeln1_1w1, fabeln1_1w2, fabeln1_1w3, fabeln1_1w4, fabeln1_1w5, fabeln1_1w6, fabeln1_1w7, fabeln1_1w8, fabeln1_1w9, fabeln1_1w10, fabeln1_1w11, fabeln1_1w12]
 var konjunktionen = [konjunktionen_w1, konjunktionen_w2, konjunktionen_w3, konjunktionen_w4, konjunktionen_w5, konjunktionen_w6, konjunktionen_w7, konjunktionen_w8, konjunktionen_w9, konjunktionen_w10, konjunktionen_w11, konjunktionen_w12, konjunktionen_w13, konjunktionen_w14, konjunktionen_w15, konjunktionen_w16, konjunktionen_w17, konjunktionen_w18, konjunktionen_w19, konjunktionen_w20, konjunktionen_w21, konjunktionen_w22, konjunktionen_w23, konjunktionen_w24, konjunktionen_w25]
 var fabeln2_1 = [fabeln2_1w1, fabeln2_1w2, fabeln2_1w3, fabeln2_1w4, fabeln2_1w5, fabeln2_1w6, fabeln2_1w7, fabeln2_1w8, fabeln2_1w9, fabeln2_1w10, fabeln2_1w11, fabeln2_1w12, fabeln2_1w13, fabeln2_1w14, fabeln2_1w15, fabeln2_1w16, fabeln2_1w17, fabeln2_1w18]
+var fabeln3_1 = [fabeln3_1w1, fabeln3_1w2, fabeln3_1w3, fabeln3_1w4, fabeln3_1w5, fabeln3_1w6, fabeln3_1w7, fabeln3_1w8, fabeln3_1w9, fabeln3_1w10, fabeln3_1w11, fabeln3_1w12, fabeln3_1w13, fabeln3_1w14, fabeln3_1w15]
+var fabeln8 = [fabeln8w1, fabeln8w2, fabeln8w3, fabeln8w4, fabeln8w5, fabeln8w6, fabeln8w7, fabeln8w8, fabeln8w9, fabeln8w10, fabeln8w11, fabeln8w12, fabeln8w13, fabeln8w14, fabeln8w15, fabeln8w16, fabeln8w17, fabeln8w18, fabeln8w19, fabeln8w20, fabeln8w21]
 
 var zu_bearbeiten = []
 
@@ -192,6 +233,7 @@ function farbe_auswahl_weg(){
     document.getElementById("button_fabeln1_1").style.color = "white";
     document.getElementById("button_konjunktionen").style.color = "white";
     document.getElementById("button_fabeln2_1").style.color = "white";
+    document.getElementById("button_fabeln3_1").style.color = "white";
 }
 
 //hier neues dazu
@@ -199,6 +241,7 @@ function lektionen_unsichtbar(){
     document.getElementById("button_fabeln1_1").style.display = "none";
     document.getElementById("button_konjunktionen").style.display = "none";
     document.getElementById("button_fabeln2_1").style.display = "none";
+    document.getElementById("button_fabeln3_1").style.display = "none";
 }
 
 //hier neues dazu
@@ -206,6 +249,7 @@ function lektionen_sichtbar(){
     document.getElementById("button_fabeln1_1").style.display = "inline-block";
     document.getElementById("button_konjunktionen").style.display = "inline-block";
     document.getElementById("button_fabeln2_1").style.display = "inline-block";
+    document.getElementById("button_fabeln3_1").style.display = "inline-block";
 }
 
 function vokabel_abfrag_modus_beenden(){
@@ -226,11 +270,12 @@ function vokabel_abfrag_modus_beenden(){
 vok_fabeln1_1_button_wert = 0
 vok_konjunktionen_button_wert = 0
 vok_fabeln2_1_button_wert = 0
+vok_fabeln3_1_button_wert = 0
 
 
 //hier neues dazu
 function farbe_start_button(){
-    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert;
+    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert;
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
         document.getElementById("button_start").style.color = "green";
     }else{
@@ -255,6 +300,18 @@ function farbe_button_blabla(){
 }
 
 */
+
+function farbe_button_fabeln3_1(){
+    if (vok_fabeln3_1_button_wert == 0){
+        document.getElementById("button_fabeln3_1").style.color = "green";
+        vok_fabeln3_1_button_wert = 1;
+        farbe_start_button();
+    }else{
+        document.getElementById("button_fabeln3_1").style.color = "white";
+        vok_fabeln3_1_button_wert = 0;
+        farbe_start_button();
+    }
+}
 
 function farbe_button_fabeln2_1(){
     if (vok_fabeln2_1_button_wert == 0){
@@ -297,13 +354,14 @@ function variablen_für_buttons_zurücksetzen(){
     vok_fabeln1_1_button_wert = 0;
     vok_konjunktionen_button_wert = 0;
     vok_fabeln2_1_button_wert = 0;
+    vok_fabeln3_1_button_wert = 0;
     deutsch_latein_wert = 0;
     latein_deutsch_wert = 0;
 }
 
 //hier neues dazu 1. bei let summe_button_werte 2. if
 function starte(){
-    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert
+    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
         if (vok_fabeln1_1_button_wert == 1){
             zu_bearbeiten = zu_bearbeiten.concat(fabeln1_1);
@@ -313,6 +371,9 @@ function starte(){
         }
         if (vok_fabeln2_1_button_wert == 1){
             zu_bearbeiten = zu_bearbeiten.concat(fabeln2_1);
+        }
+        if (vok_fabeln3_1_button_wert == 1){
+            zu_bearbeiten = zu_bearbeiten.concat(fabeln3_1);
         }
         vokabel_abfrag_modus_starten();
     }
