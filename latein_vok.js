@@ -81,27 +81,27 @@ var fabeln3_1w13 = new vokabel('rumpere', 'brechen, bersten', 'rumpo, rupi, rupt
 var fabeln3_1w14 = new vokabel('frangere', '(zer)brechen', 'frango, fregi, fractum');
 var fabeln3_1w15 = new vokabel('pati', 'erdulden, ertragen', 'patior, passus sum');
 
-var fabeln8w1 = new vokabel('', '', '');
-var fabeln8w2 = new vokabel('', '', '');
-var fabeln8w3 = new vokabel('', '', '');
-var fabeln8w4 = new vokabel('', '', '');
-var fabeln8w5 = new vokabel('', '', '');
-var fabeln8w6 = new vokabel('', '', '');
-var fabeln8w7 = new vokabel('', '', '');
-var fabeln8w8 = new vokabel('', '', '');
-var fabeln8w9 = new vokabel('', '', '');
-var fabeln8w10 = new vokabel('', '', '');
-var fabeln8w11 = new vokabel('', '', '');
-var fabeln8w12 = new vokabel('', '', '');
-var fabeln8w13 = new vokabel('', '', '');
-var fabeln8w14 = new vokabel('', '', '');
-var fabeln8w15 = new vokabel('', '', '');
-var fabeln8w16 = new vokabel('', '', '');
-var fabeln8w17 = new vokabel('', '', '');
-var fabeln8w18 = new vokabel('', '', '');
-var fabeln8w19 = new vokabel('', '', '');
-var fabeln8w20 = new vokabel('', '', '');
-var fabeln8w21 = new vokabel('', '', '');
+var fabeln8w1 = new vokabel('callidus', 'schlau', '-a, -um');
+var fabeln8w2 = new vokabel('effugium', 'Fluchtweg', 'effugii n.');
+var fabeln8w3 = new vokabel('maulum', 'Leid, Schaden', 'mali n.');
+var fabeln8w4 = new vokabel('decidere','hinunterfallen', 'decido, decidi');
+var fabeln8w5 = new vokabel('inscius', 'unwissend, ahnungslos', '-a, -um');
+var fabeln8w6 = new vokabel('hircus', 'Ziegenbock', 'hirci m.');
+var fabeln8w7 = new vokabel('sitire', 'durstig sein', 'sitio, -');
+var fabeln8w8 = new vokabel('sitis', 'Durst', 'sitis f.');
+var fabeln8w9 = new vokabel('simul', 'zugleich, gleichzeitig', 'Adverb');
+var fabeln8w10 = new vokabel('copiosus', 'reichlich', '-a ,-um');
+var fabeln8w11 = new vokabel('fraus', 'Betrug', 'fraudis f.');
+var fabeln8w12 = new vokabel('bonitas', 'Güte, gute Qualität', 'bonitatis f.');
+var fabeln8w13 = new vokabel('copia', 'Menge', 'copiae f.');
+var fabeln8w14 = new vokabel('voluptas', 'Lust, Freude', 'voluptatis f.');
+var fabeln8w15 = new vokabel('satiare', 'stillen, sättigen', 'satio, satiavi, satiatum');
+var fabeln8w16 = new vokabel('evadere', 'entkommen, entrinnen', 'evado, evasi, evasum');
+var fabeln8w17 = new vokabel('niti', '(+ Abl.) sich stützen (auf etw.)', 'nitor, nixus sum');
+var fabeln8w18 = new vokabel('celsus', 'hoch(ragend)', '-a, -um');
+var fabeln8w19 = new vokabel('cornu', 'Horn', 'cornus n.');
+var fabeln8w20 = new vokabel('haerere', 'hängen bleiben, stecken bleiben', 'haereo, haesi, haesurus');
+var fabeln8w21 = new vokabel('dulcis', 'süß', 'dulce');
 
 //hier neue dazu
 var fabeln1_1 = [fabeln1_1w1, fabeln1_1w2, fabeln1_1w3, fabeln1_1w4, fabeln1_1w5, fabeln1_1w6, fabeln1_1w7, fabeln1_1w8, fabeln1_1w9, fabeln1_1w10, fabeln1_1w11, fabeln1_1w12]
@@ -234,6 +234,7 @@ function farbe_auswahl_weg(){
     document.getElementById("button_konjunktionen").style.color = "white";
     document.getElementById("button_fabeln2_1").style.color = "white";
     document.getElementById("button_fabeln3_1").style.color = "white";
+    document.getElementById("button_fabeln8").style.color = "white";
 }
 
 //hier neues dazu
@@ -242,6 +243,7 @@ function lektionen_unsichtbar(){
     document.getElementById("button_konjunktionen").style.display = "none";
     document.getElementById("button_fabeln2_1").style.display = "none";
     document.getElementById("button_fabeln3_1").style.display = "none";
+    document.getElementById("button_fabeln8").style.display = "none";
 }
 
 //hier neues dazu
@@ -250,6 +252,7 @@ function lektionen_sichtbar(){
     document.getElementById("button_konjunktionen").style.display = "inline-block";
     document.getElementById("button_fabeln2_1").style.display = "inline-block";
     document.getElementById("button_fabeln3_1").style.display = "inline-block";
+    document.getElementById("button_fabeln8").style.display = "inline-block";
 }
 
 function vokabel_abfrag_modus_beenden(){
@@ -271,11 +274,12 @@ vok_fabeln1_1_button_wert = 0
 vok_konjunktionen_button_wert = 0
 vok_fabeln2_1_button_wert = 0
 vok_fabeln3_1_button_wert = 0
+vok_fabeln8_button_wert = 0
 
 
 //hier neues dazu
 function farbe_start_button(){
-    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert;
+    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert;
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
         document.getElementById("button_start").style.color = "green";
     }else{
@@ -309,6 +313,18 @@ function farbe_button_fabeln3_1(){
     }else{
         document.getElementById("button_fabeln3_1").style.color = "white";
         vok_fabeln3_1_button_wert = 0;
+        farbe_start_button();
+    }
+}
+
+function farbe_button_fabeln8(){
+    if (vok_fabeln8_button_wert == 0){
+        document.getElementById("button_fabeln8").style.color = "green";
+        vok_fabeln8_button_wert = 1;
+        farbe_start_button();
+    }else{
+        document.getElementById("button_fabeln8").style.color = "white";
+        vok_fabeln8_button_wert = 0;
         farbe_start_button();
     }
 }
@@ -357,6 +373,7 @@ function variablen_für_buttons_zurücksetzen(){
     vok_fabeln3_1_button_wert = 0;
     deutsch_latein_wert = 0;
     latein_deutsch_wert = 0;
+    vok_fabeln8_button_wert = 0;
 }
 
 //hier neues dazu 1. bei let summe_button_werte 2. if
@@ -374,6 +391,9 @@ function starte(){
         }
         if (vok_fabeln3_1_button_wert == 1){
             zu_bearbeiten = zu_bearbeiten.concat(fabeln3_1);
+        }
+        if (vok_fabeln8_button_wert == 1){
+            zu_bearbeiten = zu_bearbeiten.concat(fabeln8);
         }
         vokabel_abfrag_modus_starten();
     }
