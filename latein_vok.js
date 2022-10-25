@@ -378,7 +378,7 @@ function variablen_für_buttons_zurücksetzen(){
 
 //hier neues dazu 1. bei let summe_button_werte 2. if
 function starte(){
-    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert
+    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
         if (vok_fabeln1_1_button_wert == 1){
             zu_bearbeiten = zu_bearbeiten.concat(fabeln1_1);
