@@ -9,15 +9,22 @@
 </head>
 <body>
     <div>
-        <button class="button einstellungen" id="button_fabeln1_1" onclick="farbe_button_fabeln1_1()">1.1 Vulpes et Corvus</button>
-        <button class="button einstellungen" id="button_fabeln2_1" onclick="farbe_button_fabeln2_1()">2.1 Lupus et Agnus</button>
-        <button class="button einstellungen" id="button_fabeln3_1" onclick="farbe_button_fabeln3_1()">3.1 Rana Rupta et Bos</button>
-        <button class="button einstellungen" id="button_fabeln8" onclick="farbe_button_fabeln8()">8. Vulpes et Caper</button>
-        <button class="button einstellungen" id="button_konjunktionen" onclick="farbe_button_konjunktionen()">konjunktionen</button>
+        <button class="kategorie" id="button_fabeln" onclick="fabeln_ausklappen_einklappen()" >Fabeln +</button>
+        <button class="button einstellungen fabeln" id="button_fabeln1_1" onclick="farbe_button_fabeln1_1()">1.1 Vulpes et Corvus</button>
+        <button class="button einstellungen fabeln" id="button_fabeln2_1" onclick="farbe_button_fabeln2_1()">2.1 Lupus et Agnus</button>
+        <button class="button einstellungen fabeln" id="button_fabeln3_1" onclick="farbe_button_fabeln3_1()">3.1 Rana Rupta et Bos</button>
+        <button class="button einstellungen fabeln" id="button_fabeln3_2" onclick="farbe_button_fabeln3_2()">3.2 De rana inflata</button>
+        <button class="button einstellungen fabeln" id="button_fabeln4" onclick="farbe_button_fabeln4()">4. Vulpes et Ciconia</button>
+        <button class="button einstellungen fabeln" id="button_fabeln8" onclick="farbe_button_fabeln8()">8. Vulpes et Caper</button>
+        
     </div>
     <div>
-        <button class="button einstellungen" id="button_latein-deutsch" onclick="latein_deutsch()">Latein - Deutsch</button>
-        <button class="button einstellungen" id="button_deutsch-latein" onclick="deutsch_latein()">Deutsch - Latein</button>
+        <button class="kategorie" id="button_andere" onclick="andere_ausklappen_einklappen()" >Andere +</button>
+        <button class="button einstellungen andere" id="button_konjunktionen" onclick="farbe_button_konjunktionen()">konjunktionen</button>
+    </div>
+    <div>
+        <button class="button einstellungen richtung" id="button_latein-deutsch" onclick="latein_deutsch()">Latein - Deutsch</button>
+        <button class="button einstellungen richtung" id="button_deutsch-latein" onclick="deutsch_latein()">Deutsch - Latein</button>
     </div>
     <div>
         <button class="button einstellungen" id="button_start" onclick="starte()">start</button>
