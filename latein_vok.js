@@ -180,12 +180,20 @@ function neue_vok_anzeigen(){
             document.getElementById("uebersetzung").innerHTML = zu_bearbeiten[auswahl].latein;
             document.getElementById("grammatik").innerHTML = zu_bearbeiten[auswahl].grammatik;
         }
-        zu_bearbeiten.splice(auswahl,1);
     }else{
         document.getElementById("array_length").innerHTML = "";
         vokabel_abfrag_modus_beenden();
         document.getElementById("button_start").style.backgroundColor = "rgb(147, 147, 197)";
     }
+}
+
+function neue_vok_anzeigen_richtig(){
+    zu_bearbeiten.splice(auswahl,1);
+    neue_vok_anzeigen ();
+}
+
+function neue_vok_anzeigen_falsch(){
+    neue_vok_anzeigen ();
 }
 
 var grammatik_wert = 0
@@ -233,7 +241,8 @@ function vokabel_abfrag_modus_starten(){
     document.getElementById("vokabel").style.display = "block";
     document.getElementById("button_uebersetzung").style.display = "block";
     document.getElementById("button_grammatik").style.display = "block";
-    document.getElementById("button_naechste_vok").style.display = "block";
+    document.getElementById("button_naechste_vok_richtig").style.display = "inline-block";
+    document.getElementById("button_naechste_vok_falsch").style.display = "inline-block";
     document.getElementById("button_fabeln").style.display = "none";
     farbe_auswahl_weg();
 }
@@ -281,7 +290,8 @@ function vokabel_abfrag_modus_beenden(){
     document.getElementById("grammatik").style.display = "none";
     document.getElementById("button_uebersetzung").style.display = "none";
     document.getElementById("button_grammatik").style.display = "none";
-    document.getElementById("button_naechste_vok").style.display = "none";
+    document.getElementById("button_naechste_vok_richtig").style.display = "none";
+    document.getElementById("button_naechste_vok_falsch").style.display = "none";
     document.getElementById("button_start").style.backgroundColor = "rgb(147, 147, 197)";
     document.getElementById("button_fabeln").style.display = "inline-block";
     document.getElementById("button_andere").style.display = "inline-block";
