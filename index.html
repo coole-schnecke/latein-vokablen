@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    <meta http-equiv=“cache-control“ content=“no-cache, no-store, must-revalidate“ />
+    <meta http-equiv=“pragma“ content=“no-cache“ />
+    <meta http-equiv=“expires“ content=“0″ />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,36 +12,42 @@
 </head>
 <body>
     <div>
-        <button class="kategorie" id="button_fabeln" onclick="fabeln_ausklappen_einklappen()" >Fabeln +</button>
-        <button class="button einstellungen fabeln" id="button_fabeln1_1" onclick="farbe_button_fabeln1_1()">1.1 Vulpes et Corvus</button>
-        <button class="button einstellungen fabeln" id="button_fabeln2_1" onclick="farbe_button_fabeln2_1()">2.1 Lupus et Agnus</button>
-        <button class="button einstellungen fabeln" id="button_fabeln3_1" onclick="farbe_button_fabeln3_1()">3.1 Rana Rupta et Bos</button>
-        <button class="button einstellungen fabeln" id="button_fabeln3_2" onclick="farbe_button_fabeln3_2()">3.2 De rana inflata</button>
-        <button class="button einstellungen fabeln" id="button_fabeln4" onclick="farbe_button_fabeln4()">4. Vulpes et Ciconia</button>
-        <button class="button einstellungen fabeln" id="button_fabeln8" onclick="farbe_button_fabeln8()">8. Vulpes et Caper</button>
+        <button class="zeigen kategorie einstellungen" id="button_fabeln" onclick="fabeln_ausklappen_einklappen()" >Fabeln +</button>
+        <button class="einstellungen fabeln vokabeln" id="button_fabeln1_1" onclick="farbe_button_fabeln1_1()">1.1 Vulpes et Corvus</button>
+        <button class="einstellungen fabeln vokabeln" id="button_fabeln2_1" onclick="farbe_button_fabeln2_1()">2.1 Lupus et Agnus</button>
+        <button class="einstellungen fabeln vokabeln" id="button_fabeln3_1" onclick="farbe_button_fabeln3_1()">3.1 Rana Rupta et Bos</button>
+        <button class="einstellungen fabeln vokabeln" id="button_fabeln3_2" onclick="farbe_button_fabeln3_2()">3.2 De rana inflata</button>
+        <button class="einstellungen fabeln vokabeln" id="button_fabeln4" onclick="farbe_button_fabeln4()">4. Vulpes et Ciconia</button>
+        <button class="einstellungen fabeln vokabeln" id="button_fabeln8" onclick="farbe_button_fabeln8()">8. Vulpes et Caper</button>
         
     </div>
     <div>
-        <button class="kategorie" id="button_andere" onclick="andere_ausklappen_einklappen()" >Andere +</button>
-        <button class="button einstellungen andere" id="button_konjunktionen" onclick="farbe_button_konjunktionen()">konjunktionen</button>
+        <button class="zeigen kategorie einstellungen" id="button_andere" onclick="andere_ausklappen_einklappen()" >Andere +</button>
+        <button class="einstellungen andere vokabeln" id="button_konjunktionen" onclick="farbe_button_konjunktionen()">konjunktionen</button>
     </div>
     <div>
-        <button class="button einstellungen richtung" id="button_latein-deutsch" onclick="latein_deutsch()">Latein - Deutsch</button>
-        <button class="button einstellungen richtung" id="button_deutsch-latein" onclick="deutsch_latein()">Deutsch - Latein</button>
+        <button class="zeigen einstellungen richtung" id="button_latein-deutsch" onclick="latein_deutsch()">Latein - Deutsch</button>
+        <button class="zeigen einstellungen richtung" id="button_deutsch-latein" onclick="deutsch_latein()">Deutsch - Latein</button>
     </div>
     <div>
-        <button class="button einstellungen" id="button_start" onclick="starte()">start</button>
+        <button class="zeigen button einstellungen" id="button_start" onclick="starte()">start</button>
     </div>
     <div>
-        <p class="abfrage" id="vokabel">fgfg cgvh</p>
-        <button class="button abfrage" id="button_uebersetzung" onclick="uebersetzung_anzeigen()">Übersetzung zeigen</button>
-        <p class="abfrage" id="uebersetzung">fgjk</p>
-        <button class="button abfrage" id="button_grammatik" onclick="grammatik_anzeigen()">Grammatik zeigen</button>
-        <p class="abfrage" id="grammatik">hjbn bn b bn n</p>
+        <div>
+            <p class="abfrage" id="vokabel">fgfg cgvh</p>
+        </div>
+        <button class="abfrage" id="button_uebersetzung" onclick="uebersetzung_anzeigen()">Übersetzung zeigen</button>
+        <div>
+            <p class="abfrage" id="uebersetzung">fgjk</p>
+        </div>
+        <button class="abfrage" id="button_grammatik" onclick="grammatik_anzeigen()">Grammatik zeigen</button>
+        <div>
+            <p class="abfrage" id="grammatik">hjbn bn b bn n</p>
+        </div>
     </div>
     <div>
-        <button class="abfrage button richtigfalsch" id="button_naechste_vok_richtig" onclick="neue_vok_anzeigen_richtig()">richtig</button>
-        <button class="abfrage button richtigfalsch" id="button_naechste_vok_falsch" onclick="neue_vok_anzeigen_falsch()">Vokabel später nochmal zeigen</button>
+        <button class="abfrage richtigfalsch" id="button_naechste_vok_richtig" onclick="neue_vok_anzeigen_richtig()">richtig</button>
+        <button class="abfrage richtigfalsch" id="button_naechste_vok_falsch" onclick="neue_vok_anzeigen_falsch()">Vokabel später nochmal zeigen</button>
     </div>
     <p id="array_length"></p>
     

@@ -114,17 +114,12 @@ var fabeln3_2 = [fabeln3_2w1]
 var fabeln4 = [fabeln4w1]
 var fabeln8 = [fabeln8w1, fabeln8w2, fabeln8w3, fabeln8w4, fabeln8w5, fabeln8w6, fabeln8w7, fabeln8w8, fabeln8w9, fabeln8w10, fabeln8w11, fabeln8w12, fabeln8w13, fabeln8w14, fabeln8w15, fabeln8w16, fabeln8w17, fabeln8w18, fabeln8w19, fabeln8w20, fabeln8w21, fabeln8w22]
 
-var zu_bearbeiten = []
 
-
-var auswahl = 0
-
+//deutsch-latein latein-deutsch
 var deutsch_latein_wert = 0
 var latein_deutsch_wert = 0
 
 var richtung = 0
-
-var fabe_ausgewählt = "black"
 
 function deutsch_latein(){
     if (deutsch_latein_wert == 0){
@@ -159,6 +154,11 @@ function latein_deutsch(){
     }
     richtung = 0;
 }
+
+
+//neue vok anzeigen
+
+var auswahl = 0
 
 function neue_vok_anzeigen(){
     if (zu_bearbeiten.length >= 1){
@@ -196,6 +196,8 @@ function neue_vok_anzeigen_falsch(){
     neue_vok_anzeigen ();
 }
 
+
+//grammatik zeigen
 var grammatik_wert = 0
 
 function grammatik_anzeigen(){
@@ -210,6 +212,8 @@ function grammatik_anzeigen(){
     }
 }
 
+
+//übersetzung zeigen
 uebersetzung_wert = 0
 
 function uebersetzung_anzeigen(){
@@ -224,89 +228,45 @@ function uebersetzung_anzeigen(){
     }
 }
 
+
+//abfrage modus
 function vokabel_abfrag_modus_starten(){
     variablen_für_buttons_zurücksetzen();
     neue_vok_anzeigen();
-    lektionen_unsichtbar();
-    document.getElementById("button_fabeln").innerHTML = "Fabeln +";
-    document.getElementById("button_andere").innerHTML = "Andere +";
-    document.getElementById("button_andere").style.display = "none";
-    document.getElementById("button_deutsch-latein").style.backgroundColor = "rgb(203, 147, 225)";
-    document.getElementById("button_latein-deutsch").style.backgroundColor = "rgb(203, 147, 225)";
-    document.getElementById("button_latein-deutsch").style.backgroundColor = "rgb(203, 147, 225)";
-    document.getElementById("button_deutsch-latein").style.backgroundColor = "rgb(203, 147, 225)";
-    document.getElementById("button_deutsch-latein").style.display = "none";
-    document.getElementById("button_latein-deutsch").style.display = "none";
-    document.getElementById("button_start").style.display = "none";
-    document.getElementById("vokabel").style.display = "block";
-    document.getElementById("button_uebersetzung").style.display = "block";
-    document.getElementById("button_grammatik").style.display = "block";
-    document.getElementById("button_naechste_vok_richtig").style.display = "inline-block";
-    document.getElementById("button_naechste_vok_falsch").style.display = "inline-block";
-    document.getElementById("button_fabeln").style.display = "none";
-    farbe_auswahl_weg();
-}
-
-//hier neues dazu
-function farbe_auswahl_weg(){
-    document.getElementById("button_fabeln1_1").style.backgroundColor = "rgb(180, 180, 180)";
-    document.getElementById("button_konjunktionen").style.backgroundColor = "rgb(180, 180, 180)";
-    document.getElementById("button_fabeln2_1").style.backgroundColor = "rgb(180, 180, 180)";
-    document.getElementById("button_fabeln3_1").style.backgroundColor = "rgb(180, 180, 180)";
-    document.getElementById("button_fabeln8").style.backgroundColor = "rgb(180, 180, 180)";
-    document.getElementById("button_fabeln3_2").style.backgroundColor = "rgb(180, 180, 180)";
-    document.getElementById("button_fabeln4").style.backgroundColor = "rgb(180, 180, 180)";
-}
-
-//hier neues dazu
-function lektionen_unsichtbar(){
-    document.getElementById("button_fabeln1_1").style.display = "none";
-    document.getElementById("button_konjunktionen").style.display = "none";
-    document.getElementById("button_fabeln2_1").style.display = "none";
-    document.getElementById("button_fabeln3_1").style.display = "none";
-    document.getElementById("button_fabeln8").style.display = "none";
-    document.getElementById("button_fabeln3_2").style.display = "none";
-    document.getElementById("button_fabeln4").style.display = "none";
-}
-
-//hier neues dazu
-function lektionen_sichtbar(){
-    document.getElementById("button_fabeln1_1").style.display = "inline-block";
-    document.getElementById("button_konjunktionen").style.display = "inline-block";
-    document.getElementById("button_fabeln2_1").style.display = "inline-block";
-    document.getElementById("button_fabeln3_1").style.display = "inline-block";
-    document.getElementById("button_fabeln8").style.display = "inline-block";
-    document.getElementById("button_fabeln3_2").style.display = "inline-block";
-    document.getElementById("button_fabeln4").style.display = "inline-block";
-}
-
-function vokabel_abfrag_modus_beenden(){
-    /*lektionen_sichtbar();*/
-    document.getElementById("button_deutsch-latein").style.display = "inline-block";
-    document.getElementById("button_latein-deutsch").style.display = "inline-block";
-    document.getElementById("button_start").style.display = "inline-block";
-    document.getElementById("vokabel").style.display = "none";
+    for (let element of document.getElementsByClassName("einstellungen")){
+        element.style.display = "none";
+    }
+    for (let element of document.getElementsByClassName("abfrage")){
+        element.style.display = "inline-block";
+    }
     document.getElementById("uebersetzung").style.display = "none";
     document.getElementById("grammatik").style.display = "none";
-    document.getElementById("button_uebersetzung").style.display = "none";
-    document.getElementById("button_grammatik").style.display = "none";
-    document.getElementById("button_naechste_vok_richtig").style.display = "none";
-    document.getElementById("button_naechste_vok_falsch").style.display = "none";
-    document.getElementById("button_start").style.backgroundColor = "rgb(147, 147, 197)";
-    document.getElementById("button_fabeln").style.display = "inline-block";
-    document.getElementById("button_andere").style.display = "inline-block";
+    for (let element of document.getElementsByClassName("richtung")){
+        element.style.backgroundColor = "rgb(203, 147, 225)";
+    }
+    document.getElementById("button_fabeln").innerHTML = "Fabeln +";
+    document.getElementById("button_andere").innerHTML = "Andere +";
+    for (let element of document.getElementsByClassName("vokabeln")){
+        element.style.backgroundColor = "rgb(180, 180, 180)";
+    }
 }
 
-//hier neues dazu
-vok_fabeln1_1_button_wert = 0
-vok_konjunktionen_button_wert = 0
-vok_fabeln2_1_button_wert = 0
-vok_fabeln3_1_button_wert = 0
-vok_fabeln8_button_wert = 0
-vok_fabeln3_2_button_wert = 0
-vok_fabeln4_button_wert = 0
 
+//einstellungs modus
+function vokabel_abfrag_modus_beenden(){
+    for (let element of document.getElementsByClassName("abfrage")){
+        element.style.display = "none";
+    }
+    for (let element of document.getElementsByClassName("kategorie")){
+        element.style.display = "inline-block";
+    }
+    for (let element of document.getElementsByClassName("zeigen")){
+        element.style.display = "inline-block";
+    }
+    document.getElementById("button_start").style.backgroundColor = "rgb(147, 147, 197)";
+}
 
+//start button
 //hier neues dazu
 function farbe_start_button(){
     let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert;
@@ -335,6 +295,10 @@ function farbe_button_blabla(){
 
 */
 
+
+//fabeln3_1
+vok_fabeln3_1_button_wert = 0
+
 function farbe_button_fabeln3_1(){
     if (vok_fabeln3_1_button_wert == 0){
         document.getElementById("button_fabeln3_1").style.backgroundColor = "rgb(88, 88, 88)";
@@ -346,6 +310,10 @@ function farbe_button_fabeln3_1(){
         farbe_start_button();
     }
 }
+
+
+//fabeln3_2
+vok_fabeln3_2_button_wert = 0
 
 function farbe_button_fabeln3_2(){
     if (vok_fabeln3_2_button_wert == 0){
@@ -359,6 +327,10 @@ function farbe_button_fabeln3_2(){
     }
 }
 
+
+//fablen4
+vok_fabeln4_button_wert = 0
+
 function farbe_button_fabeln4(){
     if (vok_fabeln4_button_wert == 0){
         document.getElementById("button_fabeln4").style.backgroundColor = "rgb(88, 88, 88)";
@@ -370,6 +342,10 @@ function farbe_button_fabeln4(){
         farbe_start_button();
     }
 }
+
+
+//fabeln8
+vok_fabeln8_button_wert = 0
 
 function farbe_button_fabeln8(){
     if (vok_fabeln8_button_wert == 0){
@@ -383,6 +359,10 @@ function farbe_button_fabeln8(){
     }
 }
 
+
+//fabeln2_1
+vok_fabeln2_1_button_wert = 0
+
 function farbe_button_fabeln2_1(){
     if (vok_fabeln2_1_button_wert == 0){
         document.getElementById("button_fabeln2_1").style.backgroundColor = "rgb(88, 88, 88)";
@@ -394,6 +374,10 @@ function farbe_button_fabeln2_1(){
         farbe_start_button();
     }
 }
+
+
+//fabeln 1_1
+vok_fabeln1_1_button_wert = 0
 
 function farbe_button_fabeln1_1(){
     if (vok_fabeln1_1_button_wert == 0){
@@ -407,6 +391,10 @@ function farbe_button_fabeln1_1(){
     }
 }
 
+
+//konjunktionen
+vok_konjunktionen_button_wert = 0
+
 function farbe_button_konjunktionen(){
     if (vok_konjunktionen_button_wert == 0){
         document.getElementById("button_konjunktionen").style.backgroundColor = "rgb(88, 88, 88)";
@@ -419,6 +407,8 @@ function farbe_button_konjunktionen(){
     }
 }
 
+
+//variablen für button farbe zurück
 //hier neues dazu
 function variablen_für_buttons_zurücksetzen(){
     vok_fabeln1_1_button_wert = 0;
@@ -434,7 +424,10 @@ function variablen_für_buttons_zurücksetzen(){
     andere_button_wert = 0
 }
 
+//starte
 //hier neues dazu 1. bei let summe_button_werte 2. if
+var zu_bearbeiten = []
+
 function starte(){
     let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
@@ -463,30 +456,28 @@ function starte(){
     }
 }
 
+
+//fabeln +/-
 fabeln_button_wert = 0
 
 function fabeln_ausklappen_einklappen(){
     if(fabeln_button_wert == 0){
-        document.getElementById("button_fabeln1_1").style.display = "inline-block";
-        document.getElementById("button_fabeln2_1").style.display = "inline-block";
-        document.getElementById("button_fabeln3_1").style.display = "inline-block";
-        document.getElementById("button_fabeln8").style.display = "inline-block";
-        document.getElementById("button_fabeln3_2").style.display = "inline-block";
-        document.getElementById("button_fabeln4").style.display = "inline-block";
+        for (let element of document.getElementsByClassName("fabeln")){
+            element.style.display="inline-block";
+        }
         fabeln_button_wert = 1
         document.getElementById("button_fabeln").innerHTML = "Fabeln -";
     }else{
-        document.getElementById("button_fabeln1_1").style.display = "none";
-        document.getElementById("button_fabeln2_1").style.display = "none";
-        document.getElementById("button_fabeln3_1").style.display = "none";
-        document.getElementById("button_fabeln8").style.display = "none";
-        document.getElementById("button_fabeln3_2").style.display = "none";
-        document.getElementById("button_fabeln4").style.display = "none";
+        for (let element of document.getElementsByClassName("fabeln")){
+            element.style.display="none";
+         }
         fabeln_button_wert = 0
         document.getElementById("button_fabeln").innerHTML = "Fabeln +";
     }
 }
 
+
+//andere +/-
 andere_button_wert = 0
 
 function andere_ausklappen_einklappen(){
