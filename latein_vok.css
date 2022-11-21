@@ -27,6 +27,9 @@ body{
 .andere{
   display: none;
 }
+.caesar{
+  display: none;
+}
 .kategorie{
   background-color: rgb(14, 139, 153);
 }

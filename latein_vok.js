@@ -105,6 +105,35 @@ var fabeln8w20 = new vokabel('haerere', 'hängen bleiben, stecken bleiben', 'hae
 var fabeln8w21 = new vokabel('dulcis', 'süß', 'dulce');
 var fabeln8w22 = new vokabel('devenire', 'hingelangen', 'devenio, deveni, deventum');
 
+var caesar1w1 = new vokabel('imperare', 'befehlen, herrschen, regieren', 'impero, imperavi, imperatum');
+var caesar1w2 = new vokabel('procedere', 'vorrücken, vorstoßen', 'procedo, processi, processum');
+var caesar1w3 = new vokabel('domare', 'unterwerfen, bezwingen', 'domo, domui, domitum');
+var caesar1w4 = new vokabel('patere', '(ad + Akk.) sich erstrecken (auf; über)', 'pateo, patui, -');
+var caesar1w5 = new vokabel('passus', '(Doppel-)Schritt (ca. 1,5m)', 'passus m.');
+var caesar1w6 = new vokabel('mille passuum', 'tausend Doppelschritte; Meile (ca. 1,5km)', '-');
+var caesar1w7 = new vokabel('bellum inferre', '(+ Dat.) (jmd.) angreifen', '-');
+var caesar1w8 = new vokabel('ne ... quidem', 'nicht einmal', '-');
+var caesar1w9 = new vokabel('obses', 'Geisel', 'obsidis m.');
+var caesar1w10 = new vokabel('aggredi', 'angreifen', 'aggredior, aggressus sum');
+var caesar1w11 = new vokabel('successus', 'Erfolg', 'successus m.');
+var caesar1w12 = new vokabel('ter', 'dreimal', 'Adverb');
+var caesar1w13 = new vokabel('semel', 'einmal', 'Adverb');
+var caesar1w14 = new vokabel('praesens', 'anwesend, in seiner/ihrer Anwesenheit', 'praesentis');
+var caesar1w15 = new vokabel('absens', 'abwesend, in seiner/ihrer Abwesenheit', 'absentis');
+var caesar1w16 = new vokabel('bis', 'zweimal', 'Adverb');
+var caesar1w17 = new vokabel('legatus', 'General', 'legati m.');
+var caesar1w18 = new vokabel('insidiae', 'Hinterhalt', 'insidiarum f.');
+
+var caesar2w1 = new vokabel('incolere', 'bewohnen', 'incolo, incolui, incultum');
+var caesar2w2 = new vokabel('institutum', 'Einrichtung, Sitte, Brauch', 'instituti n.');
+var caesar2w3 = new vokabel('cultus', 'Lebensweise', 'cultus m.');
+var caesar2w4 = new vokabel('pertinere', '(ad) zu etwas dienen, auf etwas abzielen, reichen bis', 'pertineo, pertinui, -');
+var caesar2w5 = new vokabel('preacedere', '(+ Abl.) übertreffen (an)', 'praecedo, praecessi, praecessum');
+var caesar2w6 = new vokabel('obtinere', 'innehaben, besitzen', 'obtineo, obtinui, obtentum');
+var caesar2w7 = new vokabel('continere', 'begrenzen; zurückhalten', 'contineo, continui, contentum');
+var caesar2w8 = new vokabel('extremus', 'der äußerste, entfernteste', '-a, -um');
+var caesar2w9 = new vokabel('oriri', 'entstehen, geboren werden', 'orior, ortus sum');
+
 //hier neue dazu
 var fabeln1_1 = [fabeln1_1w1, fabeln1_1w2, fabeln1_1w3, fabeln1_1w4, fabeln1_1w5, fabeln1_1w6, fabeln1_1w7, fabeln1_1w8, fabeln1_1w9, fabeln1_1w10, fabeln1_1w11, fabeln1_1w12]
 var konjunktionen = [konjunktionen_w1, konjunktionen_w2, konjunktionen_w3, konjunktionen_w4, konjunktionen_w5, konjunktionen_w6, konjunktionen_w7, konjunktionen_w8, konjunktionen_w9, konjunktionen_w10, konjunktionen_w11, konjunktionen_w12, konjunktionen_w13, konjunktionen_w14, konjunktionen_w15, konjunktionen_w16, konjunktionen_w17, konjunktionen_w18, konjunktionen_w19, konjunktionen_w20, konjunktionen_w21, konjunktionen_w22, konjunktionen_w23, konjunktionen_w24, konjunktionen_w25]
@@ -113,7 +142,8 @@ var fabeln3_1 = [fabeln3_1w1, fabeln3_1w2, fabeln3_1w3, fabeln3_1w4, fabeln3_1w5
 var fabeln3_2 = [fabeln3_2w1]
 var fabeln4 = [fabeln4w1]
 var fabeln8 = [fabeln8w1, fabeln8w2, fabeln8w3, fabeln8w4, fabeln8w5, fabeln8w6, fabeln8w7, fabeln8w8, fabeln8w9, fabeln8w10, fabeln8w11, fabeln8w12, fabeln8w13, fabeln8w14, fabeln8w15, fabeln8w16, fabeln8w17, fabeln8w18, fabeln8w19, fabeln8w20, fabeln8w21, fabeln8w22]
-
+var caesar1 = [caesar1w1, caesar1w2, caesar1w3, caesar1w4, caesar1w5, caesar1w6, caesar1w7, caesar1w8, caesar1w9, caesar1w10, caesar1w11, caesar1w12, caesar1w13, caesar1w14, caesar1w15, caesar1w16, caesar1w17, caesar1w18]
+var caesar2 = [caesar2w1, caesar2w2, caesar2w3, caesar2w4, caesar2w5, caesar2w6, caesar2w7, caesar2w8, caesar2w9]
 
 //deutsch-latein latein-deutsch
 var deutsch_latein_wert = 0
@@ -137,6 +167,7 @@ function deutsch_latein(){
     }
     richtung = 1;
 }
+//greift auf farbe_start_button zu
 
 function latein_deutsch(){
     if(latein_deutsch_wert == 0){
@@ -154,6 +185,7 @@ function latein_deutsch(){
     }
     richtung = 0;
 }
+//greift auf farbe_start_button zu
 
 
 //neue vok anzeigen
@@ -186,15 +218,18 @@ function neue_vok_anzeigen(){
         document.getElementById("button_start").style.backgroundColor = "rgb(147, 147, 197)";
     }
 }
+//greift auf vokabel_abfrag_modus_beenden zu
 
 function neue_vok_anzeigen_richtig(){
     zu_bearbeiten.splice(auswahl,1);
     neue_vok_anzeigen ();
 }
+//greift auf neue vok anzeigen zu
 
 function neue_vok_anzeigen_falsch(){
     neue_vok_anzeigen ();
 }
+//greift auf neue vok anzeigen zu
 
 
 //grammatik zeigen
@@ -246,10 +281,13 @@ function vokabel_abfrag_modus_starten(){
     }
     document.getElementById("button_fabeln").innerHTML = "Fabeln +";
     document.getElementById("button_andere").innerHTML = "Andere +";
+    document.getElementById("button_caesar").innerHTML = "Caesar +";
     for (let element of document.getElementsByClassName("vokabeln")){
         element.style.backgroundColor = "rgb(180, 180, 180)";
     }
 }
+//greif auf varablen_für_buttons_zurücksetzten zu
+//greif auf neue vok anzeigen zu
 
 
 //einstellungs modus
@@ -269,7 +307,7 @@ function vokabel_abfrag_modus_beenden(){
 //start button
 //hier neues dazu
 function farbe_start_button(){
-    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert;
+    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert + vok_caesar1_button_wert + vok_caesar2_button_wert;
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
         document.getElementById("button_start").style.backgroundColor = "rgb(82, 82, 193)";
     }else{
@@ -296,6 +334,37 @@ function farbe_button_blabla(){
 */
 
 
+//caesar1
+vok_caesar1_button_wert = 0
+
+function farbe_button_caesar1(){
+    if (vok_caesar1_button_wert == 0){
+        document.getElementById("button_caesar1").style.backgroundColor = "rgb(88, 88, 88)";
+        vok_caesar1_button_wert = 1;
+        farbe_start_button();
+    }else{
+        document.getElementById("button_caesar1").style.backgroundColor = "rgb(180, 180, 180)";
+        vok_caesar1_button_wert = 0;
+        farbe_start_button();
+    }
+}
+
+//caesar1
+vok_caesar2_button_wert = 0
+
+function farbe_button_caesar2(){
+    if (vok_caesar2_button_wert == 0){
+        document.getElementById("button_caesar2").style.backgroundColor = "rgb(88, 88, 88)";
+        vok_caesar2_button_wert = 1;
+        farbe_start_button();
+    }else{
+        document.getElementById("button_caesar2").style.backgroundColor = "rgb(180, 180, 180)";
+        vok_caesar2_button_wert = 0;
+        farbe_start_button();
+    }
+}
+
+
 //fabeln3_1
 vok_fabeln3_1_button_wert = 0
 
@@ -310,6 +379,7 @@ function farbe_button_fabeln3_1(){
         farbe_start_button();
     }
 }
+//greif auf farbe_start_button_zu
 
 
 //fabeln3_2
@@ -326,6 +396,7 @@ function farbe_button_fabeln3_2(){
         farbe_start_button();
     }
 }
+//greif auf farbe_start_button_zu
 
 
 //fablen4
@@ -342,6 +413,7 @@ function farbe_button_fabeln4(){
         farbe_start_button();
     }
 }
+//greif auf farbe_start_button_zu
 
 
 //fabeln8
@@ -358,6 +430,7 @@ function farbe_button_fabeln8(){
         farbe_start_button();
     }
 }
+//greif auf farbe_start_button_zu
 
 
 //fabeln2_1
@@ -374,6 +447,7 @@ function farbe_button_fabeln2_1(){
         farbe_start_button();
     }
 }
+//greif auf farbe_start_button_zu
 
 
 //fabeln 1_1
@@ -390,6 +464,7 @@ function farbe_button_fabeln1_1(){
         farbe_start_button();
     }
 }
+//greif auf farbe_start_button_zu
 
 
 //konjunktionen
@@ -406,6 +481,7 @@ function farbe_button_konjunktionen(){
         farbe_start_button();
     }
 }
+//greif auf farbe_start_button_zu
 
 
 //variablen für button farbe zurück
@@ -417,11 +493,15 @@ function variablen_für_buttons_zurücksetzen(){
     vok_fabeln3_1_button_wert = 0;
     vok_fabeln3_2_button_wert = 0;
     vok_fabeln4_button_wert = 0;
+    vok_caesar1_button_wert = 0;
+    vok_caesar2_button_wert = 0;
     deutsch_latein_wert = 0;
     latein_deutsch_wert = 0;
     vok_fabeln8_button_wert = 0;
-    fabeln_button_wert = 0
-    andere_button_wert = 0
+
+    fabeln_button_wert = 0;
+    andere_button_wert = 0;
+    caesar_button_wert = 0;
 }
 
 //starte
@@ -429,7 +509,7 @@ function variablen_für_buttons_zurücksetzen(){
 var zu_bearbeiten = []
 
 function starte(){
-    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert
+    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert + vok_caesar1_button_wert + vok_caesar2_button_wert
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
         if (vok_fabeln1_1_button_wert == 1){
             zu_bearbeiten = zu_bearbeiten.concat(fabeln1_1);
@@ -452,9 +532,16 @@ function starte(){
         if (vok_fabeln3_2_button_wert == 1){
             zu_bearbeiten = zu_bearbeiten.concat(fabeln3_2);
         }
+        if (vok_caesar1_button_wert == 1){
+            zu_bearbeiten = zu_bearbeiten.concat(caesar1);
+        }
+        if (vok_caesar2_button_wert == 1){
+            zu_bearbeiten = zu_bearbeiten.concat(caesar2);
+        }
         vokabel_abfrag_modus_starten();
     }
 }
+//greif auf vokabel_afrag_modus_starten zu
 
 
 //fabeln +/-
@@ -473,6 +560,25 @@ function fabeln_ausklappen_einklappen(){
          }
         fabeln_button_wert = 0
         document.getElementById("button_fabeln").innerHTML = "Fabeln +";
+    }
+}
+
+//caesar +/-
+caesar_button_wert = 0
+
+function caesar_ausklappen_einklappen(){
+    if(caesar_button_wert == 0){
+        for (let element of document.getElementsByClassName("caesar")){
+            element.style.display="inline-block";
+        }
+        caesar_button_wert = 1
+        document.getElementById("button_caesar").innerHTML = "Caesar -";
+    }else{
+        for (let element of document.getElementsByClassName("caesar")){
+            element.style.display="none";
+         }
+        caesar_button_wert = 0
+        document.getElementById("button_caesar").innerHTML = "Caesar +";
     }
 }
 
