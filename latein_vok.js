@@ -128,11 +128,38 @@ var caesar2w1 = new vokabel('incolere', 'bewohnen', 'incolo, incolui, incultum')
 var caesar2w2 = new vokabel('institutum', 'Einrichtung, Sitte, Brauch', 'instituti n.');
 var caesar2w3 = new vokabel('cultus', 'Lebensweise', 'cultus m.');
 var caesar2w4 = new vokabel('pertinere', '(ad) zu etwas dienen, auf etwas abzielen, reichen bis', 'pertineo, pertinui, -');
-var caesar2w5 = new vokabel('preacedere', '(+ Abl.) übertreffen (an)', 'praecedo, praecessi, praecessum');
+var caesar2w5 = new vokabel('praecedere', '(+ Abl.) übertreffen (an)', 'praecedo, praecessi, praecessum');
 var caesar2w6 = new vokabel('obtinere', 'innehaben, besitzen', 'obtineo, obtinui, obtentum');
 var caesar2w7 = new vokabel('continere', 'begrenzen; zurückhalten', 'contineo, continui, contentum');
 var caesar2w8 = new vokabel('extremus', 'der äußerste, entfernteste', '-a, -um');
 var caesar2w9 = new vokabel('oriri', 'entstehen, geboren werden', 'orior, ortus sum');
+
+var caesar3w1 = new vokabel('tempestas', 'Unwetter', 'tempestatis f.');
+var caesar3w2 = new vokabel('quis', '(= aliquis) irgendein, irgendjemand, irgendetwas', '- (kompliziert)');
+var caesar3w3 = new vokabel('in primis', '(= imprimis) vor allem, hauptsächlich, ganz besonders', 'Adv.');
+var caesar3w4 = new vokabel('eripere', 'wegnehmen, entreißen', 'eripio, eripui, ereptum');
+var caesar3w5 = new vokabel('acies', 'Schlachtreihe', 'aciei f.');
+var caesar3w6 = new vokabel('restituere', 'wiederherstellen', 'restituo, restitui, restitutum');
+var caesar3w7 = new vokabel('obsistere', 'sich entgegenstellen', 'obsisto, obstiti, -');
+var caesar3w8 = new vokabel('quidem', 'zwar', 'Adv.');
+var caesar3w9 = new vokabel('plerumque', 'meistens', 'Adv.');
+var caesar3w10 = new vokabel('morari', 'zögern', 'moror, moratus');
+var caesar3w11 = new vokabel('detinere', 'zurückhalten, festhalten', 'detineo, detinui, detentum');
+
+var caesar4w1 = new vokabel('dives', 'reich', 'divitis');
+var caesar4w2 = new vokabel('coniuratio', 'Verschwörung', 'coniurationis f.');
+var caesar4w3 = new vokabel('persudaere', '(+ AcI) überzeugen, (+ ut) überredet', 'persuadeo, persuasi, persuasum');
+var caesar4w4 = new vokabel('copiae', 'Truppen', 'copiarum');
+var caesar4w5 = new vokabel('id ... iis persuasit', 'das redete er ihnen ein', '-');
+var caesar4w6 = new vokabel('auctoritas', 'Ansehen, Einfluss', 'auctoritatis f.');
+var caesar4w7 = new vokabel('permovere', 'bewegen, veranlassen, beeindrucken', 'permoveo, permovi, permovtum');
+var caesar4w8 = new vokabel('conari', 'versuchen', 'conor, conatus');
+var caesar4w9 = new vokabel('pacare', 'unterwerfen', 'paco, pacavi, pacatum');
+var caesar4w10 = new vokabel('ulterior', 'der/die/das jenseitige', 'ulterius');
+
+var caesar5w1 = new vokabel('hinc', 'dann; von hier', 'Adv.');
+var caesar5w2 = new vokabel('succedere', 'folgen', 'succedo, successi, successum');
+var caesar5w3 = new vokabel('alter', 'der andere; zweite, weitere', 'altera, alterum');
 
 //hier neue dazu
 var fabeln1_1 = [fabeln1_1w1, fabeln1_1w2, fabeln1_1w3, fabeln1_1w4, fabeln1_1w5, fabeln1_1w6, fabeln1_1w7, fabeln1_1w8, fabeln1_1w9, fabeln1_1w10, fabeln1_1w11, fabeln1_1w12]
@@ -144,6 +171,9 @@ var fabeln4 = [fabeln4w1]
 var fabeln8 = [fabeln8w1, fabeln8w2, fabeln8w3, fabeln8w4, fabeln8w5, fabeln8w6, fabeln8w7, fabeln8w8, fabeln8w9, fabeln8w10, fabeln8w11, fabeln8w12, fabeln8w13, fabeln8w14, fabeln8w15, fabeln8w16, fabeln8w17, fabeln8w18, fabeln8w19, fabeln8w20, fabeln8w21, fabeln8w22]
 var caesar1 = [caesar1w1, caesar1w2, caesar1w3, caesar1w4, caesar1w5, caesar1w6, caesar1w7, caesar1w8, caesar1w9, caesar1w10, caesar1w11, caesar1w12, caesar1w13, caesar1w14, caesar1w15, caesar1w16, caesar1w17, caesar1w18]
 var caesar2 = [caesar2w1, caesar2w2, caesar2w3, caesar2w4, caesar2w5, caesar2w6, caesar2w7, caesar2w8, caesar2w9]
+var caesar3 = [caesar3w1, caesar3w2, caesar3w3, caesar3w4, caesar3w5, caesar3w6, caesar3w7, caesar3w8, caesar3w9, caesar3w10, caesar3w11]
+var caesar4 = [caesar4w1, caesar4w2, caesar4w3, caesar4w4, caesar4w5, caesar4w6, caesar4w7, caesar4w8, caesar4w9, caesar4w10]
+var caesar5 = [caesar5w1, caesar5w2, caesar5w3]
 
 //deutsch-latein latein-deutsch
 var deutsch_latein_wert = 0
@@ -307,7 +337,7 @@ function vokabel_abfrag_modus_beenden(){
 //start button
 //hier neues dazu
 function farbe_start_button(){
-    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert + vok_caesar1_button_wert + vok_caesar2_button_wert;
+    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert + vok_caesar1_button_wert + vok_caesar2_button_wert + vok_caesar3_button_wert + vok_caesar4_button_wert + vok_caesar5_button_wert;
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
         document.getElementById("button_start").style.backgroundColor = "rgb(82, 82, 193)";
     }else{
@@ -349,7 +379,7 @@ function farbe_button_caesar1(){
     }
 }
 
-//caesar1
+//caesar2
 vok_caesar2_button_wert = 0
 
 function farbe_button_caesar2(){
@@ -364,6 +394,50 @@ function farbe_button_caesar2(){
     }
 }
 
+//caesar3
+vok_caesar3_button_wert = 0
+
+function farbe_button_caesar3(){
+    if (vok_caesar3_button_wert == 0){
+        document.getElementById("button_caesar3").style.backgroundColor = "rgb(88, 88, 88)";
+        vok_caesar3_button_wert = 1;
+        farbe_start_button();
+    }else{
+        document.getElementById("button_caesar3").style.backgroundColor = "rgb(180, 180, 180)";
+        vok_caesar3_button_wert = 0;
+        farbe_start_button();
+    }
+}
+
+//caesar4
+vok_caesar4_button_wert = 0
+
+function farbe_button_caesar4(){
+    if (vok_caesar4_button_wert == 0){
+        document.getElementById("button_caesar4").style.backgroundColor = "rgb(88, 88, 88)";
+        vok_caesar4_button_wert = 1;
+        farbe_start_button();
+    }else{
+        document.getElementById("button_caesar4").style.backgroundColor = "rgb(180, 180, 180)";
+        vok_caesar4_button_wert = 0;
+        farbe_start_button();
+    }
+}
+
+//caesar5
+vok_caesar5_button_wert = 0
+
+function farbe_button_caesar5(){
+    if (vok_caesar5_button_wert == 0){
+        document.getElementById("button_caesar5").style.backgroundColor = "rgb(88, 88, 88)";
+        vok_caesar5_button_wert = 1;
+        farbe_start_button();
+    }else{
+        document.getElementById("button_caesar5").style.backgroundColor = "rgb(180, 180, 180)";
+        vok_caesar5_button_wert = 0;
+        farbe_start_button();
+    }
+}
 
 //fabeln3_1
 vok_fabeln3_1_button_wert = 0
@@ -495,6 +569,9 @@ function variablen_für_buttons_zurücksetzen(){
     vok_fabeln4_button_wert = 0;
     vok_caesar1_button_wert = 0;
     vok_caesar2_button_wert = 0;
+    vok_caesar3_button_wert = 0;
+    vok_caesar4_button_wert = 0;
+    vok_caesar5_button_wert = 0;
     deutsch_latein_wert = 0;
     latein_deutsch_wert = 0;
     vok_fabeln8_button_wert = 0;
@@ -509,7 +586,7 @@ function variablen_für_buttons_zurücksetzen(){
 var zu_bearbeiten = []
 
 function starte(){
-    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert + vok_caesar1_button_wert + vok_caesar2_button_wert
+    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert + vok_caesar1_button_wert + vok_caesar2_button_wert + vok_caesar3_button_wert + vok_caesar4_button_wert + vok_caesar5_button_wert
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
         if (vok_fabeln1_1_button_wert == 1){
             zu_bearbeiten = zu_bearbeiten.concat(fabeln1_1);
@@ -536,6 +613,15 @@ function starte(){
             zu_bearbeiten = zu_bearbeiten.concat(caesar1);
         }
         if (vok_caesar2_button_wert == 1){
+            zu_bearbeiten = zu_bearbeiten.concat(caesar2);
+        }
+        if (vok_caesar3_button_wert == 1){
+            zu_bearbeiten = zu_bearbeiten.concat(caesar2);
+        }
+        if (vok_caesar4_button_wert == 1){
+            zu_bearbeiten = zu_bearbeiten.concat(caesar2);
+        }
+        if (vok_caesar5_button_wert == 1){
             zu_bearbeiten = zu_bearbeiten.concat(caesar2);
         }
         vokabel_abfrag_modus_starten();
