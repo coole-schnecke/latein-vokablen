@@ -616,13 +616,13 @@ function starte(){
             zu_bearbeiten = zu_bearbeiten.concat(caesar2);
         }
         if (vok_caesar3_button_wert == 1){
-            zu_bearbeiten = zu_bearbeiten.concat(caesar2);
+            zu_bearbeiten = zu_bearbeiten.concat(caesar3);
         }
         if (vok_caesar4_button_wert == 1){
-            zu_bearbeiten = zu_bearbeiten.concat(caesar2);
+            zu_bearbeiten = zu_bearbeiten.concat(caesar4);
         }
         if (vok_caesar5_button_wert == 1){
-            zu_bearbeiten = zu_bearbeiten.concat(caesar2);
+            zu_bearbeiten = zu_bearbeiten.concat(caesar5);
         }
         vokabel_abfrag_modus_starten();
     }
