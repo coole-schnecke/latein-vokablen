@@ -162,7 +162,7 @@ var caesar5w2 = new vokabel('succedere', 'folgen', 'succedo, successi, successum
 var caesar5w3 = new vokabel('alter', 'der andere; zweite, weitere', 'altera, alterum');
 
 var plinius2w1 = new vokabel('regere', 'lenken, leiten', 'rego, rexi, rectum');
-var plinius2w2 = new vokabel('apparere', 'erscheinen. sich zeigen', 'appareo, apparui, -');
+var plinius2w2 = new vokabel('apparere', 'erscheinen, sich zeigen', 'appareo, apparui, -');
 var plinius2w3 = new vokabel('uti', '(be)nutzen, verwenden; genießen', 'utor, usus sum (Dep. + Abl.)');
 var plinius2w4 = new vokabel('studere', 'sich bemühen um, streben nach; sich wissenschaftlich betätigen, studieren', 'studeo, studui, - (+ Dat.)');
 var plinius2w5 = new vokabel('ascendere', 'besteigen, steigen auf', 'ascenderer, ascendi, ascensum');
