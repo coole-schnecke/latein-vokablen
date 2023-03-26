@@ -161,6 +161,34 @@ var caesar5w1 = new vokabel('hinc', 'dann; von hier', 'Adv.');
 var caesar5w2 = new vokabel('succedere', 'folgen', 'succedo, successi, successum');
 var caesar5w3 = new vokabel('alter', 'der andere; zweite, weitere', 'altera, alterum');
 
+var plinius2w1 = new vokabel('regere', 'lenken, leiten', 'rego, rexi, rectum');
+var plinius2w2 = new vokabel('apparere', 'erscheinen. sich zeigen', 'appareo, apparui, -');
+var plinius2w3 = new vokabel('uti', '(be)nutzen, verwenden; genießen', 'utor, usus sum (Dep. + Abl.)');
+var plinius2w4 = new vokabel('studere', 'sich bemühen um, streben nach; sich wissenschaftlich betätigen, studieren', 'studeo, studui, - (+ Dat.)');
+var plinius2w5 = new vokabel('ascendere', 'besteigen, steigen auf', 'ascenderer, ascendi, ascensum');
+var plinius2w6 = new vokabel('descendere', 'hinuntersteigen', 'descendo, descendi, descensum');
+var plinius2w7 = new vokabel('consiperer', 'erblicken, sehen', 'conspicio, conspexi, conspectum');
+var plinius2w8 = new vokabel('cognoscere', 'kennenlernen, erkennen, erfahren, bemerken', 'cognosco, cognovi, cognovi');
+var plinius2w9 = new vokabel('oriri', 'entstehen; sich zeigen', 'ortus sum (Dep.)');
+var plinius2w10 = new vokabel('tollere', 'aufheben, hochheben', 'tollo, sustuli, sublatum');
+var plinius2w11 = new vokabel('videri', '(etw. zu tun) scheinen; scheinen, dass', 'videor, visus sum (Dep.) (oft mit NcI)');
+var plinius2w12 = new vokabel('classis', 'Flotte', 'classis f.');
+var plinius2w13 = new vokabel('imperium', 'Befehl; Herrschaft', 'imperii n.');
+var plinius2w14 = new vokabel('nubes', 'Wolke', 'nubis f.');
+var plinius2w15 = new vokabel('magnitudo', 'Größe', 'magnitudinis f.');
+var plinius2w16 = new vokabel('terra', 'Erde', 'terrae f.');
+var plinius2w17 = new vokabel('cinis', 'Aschne', 'cineris n.');
+var plinius2w18 = new vokabel('pumex', 'Bimsstein, Lavagestein', 'pumicis m.');
+var plinius2w19 = new vokabel('praesens', 'anwesend; persönlich', 'praesentis');
+var plinius2w20 = new vokabel('frigidus', 'kalt', '-a, -um');
+var plinius2w21 = new vokabel('caldius', 'warm', '-a, -um');
+var plinius2w22 = new vokabel('incertus', 'ungewiss, unsicher', '-a, -um');
+var plinius2w23 = new vokabel('longus', 'lang', '-a, -um');
+var plinius2w24 = new vokabel('eruditus', 'gebildet', '-a, -um');
+var plinius2w25 = new vokabel('mox', 'bald, bald darauf', 'Adv.');
+var plinius2w26 = new vokabel('postea', 'später', 'Adv.');
+var plinius2w27 = new vokabel('interdum', 'manchmal', 'Adv.');
+
 //hier neue dazu
 var fabeln1_1 = [fabeln1_1w1, fabeln1_1w2, fabeln1_1w3, fabeln1_1w4, fabeln1_1w5, fabeln1_1w6, fabeln1_1w7, fabeln1_1w8, fabeln1_1w9, fabeln1_1w10, fabeln1_1w11, fabeln1_1w12]
 var konjunktionen = [konjunktionen_w1, konjunktionen_w2, konjunktionen_w3, konjunktionen_w4, konjunktionen_w5, konjunktionen_w6, konjunktionen_w7, konjunktionen_w8, konjunktionen_w9, konjunktionen_w10, konjunktionen_w11, konjunktionen_w12, konjunktionen_w13, konjunktionen_w14, konjunktionen_w15, konjunktionen_w16, konjunktionen_w17, konjunktionen_w18, konjunktionen_w19, konjunktionen_w20, konjunktionen_w21, konjunktionen_w22, konjunktionen_w23, konjunktionen_w24, konjunktionen_w25]
@@ -174,6 +202,7 @@ var caesar2 = [caesar2w1, caesar2w2, caesar2w3, caesar2w4, caesar2w5, caesar2w6,
 var caesar3 = [caesar3w1, caesar3w2, caesar3w3, caesar3w4, caesar3w5, caesar3w6, caesar3w7, caesar3w8, caesar3w9, caesar3w10, caesar3w11]
 var caesar4 = [caesar4w1, caesar4w2, caesar4w3, caesar4w4, caesar4w5, caesar4w6, caesar4w7, caesar4w8, caesar4w9, caesar4w10]
 var caesar5 = [caesar5w1, caesar5w2, caesar5w3]
+var plinius2 =[plinius2w1, plinius2w2, plinius2w3, plinius2w4, plinius2w5, plinius2w6, plinius2w7, plinius2w8, plinius2w9, plinius2w10, plinius2w11, plinius2w12, plinius2w13, plinius2w14, plinius2w15, plinius2w16, plinius2w17, plinius2w18, plinius2w19, plinius2w20, plinius2w21, plinius2w22, plinius2w23, plinius2w24, plinius2w25, plinius2w26, plinius2w27]
 
 //deutsch-latein latein-deutsch
 var deutsch_latein_wert = 0
@@ -312,6 +341,7 @@ function vokabel_abfrag_modus_starten(){
     document.getElementById("button_fabeln").innerHTML = "Fabeln +";
     document.getElementById("button_andere").innerHTML = "Andere +";
     document.getElementById("button_caesar").innerHTML = "Caesar +";
+    document.getElementById("button_plinius").innerHTML = "Plinus +";
     for (let element of document.getElementsByClassName("vokabeln")){
         element.style.backgroundColor = "rgb(180, 180, 180)";
     }
@@ -337,7 +367,7 @@ function vokabel_abfrag_modus_beenden(){
 //start button
 //hier neues dazu
 function farbe_start_button(){
-    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert + vok_caesar1_button_wert + vok_caesar2_button_wert + vok_caesar3_button_wert + vok_caesar4_button_wert + vok_caesar5_button_wert;
+    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert + vok_caesar1_button_wert + vok_caesar2_button_wert + vok_caesar3_button_wert + vok_caesar4_button_wert + vok_caesar5_button_wert + vok_plinius2_button_wert;
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
         document.getElementById("button_start").style.backgroundColor = "rgb(82, 82, 193)";
     }else{
@@ -363,6 +393,20 @@ function farbe_button_blabla(){
 
 */
 
+//plinius2
+vok_plinius2_button_wert = 0
+
+function farbe_button_plinius2(){
+    if (vok_plinius2_button_wert == 0){
+        document.getElementById("button_plinius2").style.backgroundColor = "rgb(88, 88, 88)";
+        vok_plinius2_button_wert = 1;
+        farbe_start_button();
+    }else{
+        document.getElementById("button_plinius2").style.backgroundColor = "rgb(180, 180, 180)";
+        vok_plinius2_button_wert = 0;
+        farbe_start_button();
+    }
+}
 
 //caesar1
 vok_caesar1_button_wert = 0
@@ -572,11 +616,13 @@ function variablen_für_buttons_zurücksetzen(){
     vok_caesar3_button_wert = 0;
     vok_caesar4_button_wert = 0;
     vok_caesar5_button_wert = 0;
+    vok_plinius2_button_wert = 0;
     deutsch_latein_wert = 0;
     latein_deutsch_wert = 0;
     vok_fabeln8_button_wert = 0;
 
     fabeln_button_wert = 0;
+    plinius_button_wert = 0;
     andere_button_wert = 0;
     caesar_button_wert = 0;
 }
@@ -586,7 +632,7 @@ function variablen_für_buttons_zurücksetzen(){
 var zu_bearbeiten = []
 
 function starte(){
-    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert + vok_caesar1_button_wert + vok_caesar2_button_wert + vok_caesar3_button_wert + vok_caesar4_button_wert + vok_caesar5_button_wert
+    let summe_button_werte = vok_fabeln1_1_button_wert + vok_konjunktionen_button_wert + vok_fabeln2_1_button_wert + vok_fabeln3_1_button_wert + vok_fabeln8_button_wert + vok_fabeln3_2_button_wert + vok_fabeln4_button_wert + vok_caesar1_button_wert + vok_caesar2_button_wert + vok_caesar3_button_wert + vok_caesar4_button_wert + vok_caesar5_button_wert + vok_plinius2_button_wert
     if (summe_button_werte >= 1 && deutsch_latein_wert + latein_deutsch_wert == 1){
         if (vok_fabeln1_1_button_wert == 1){
             zu_bearbeiten = zu_bearbeiten.concat(fabeln1_1);
@@ -624,6 +670,9 @@ function starte(){
         if (vok_caesar5_button_wert == 1){
             zu_bearbeiten = zu_bearbeiten.concat(caesar5);
         }
+        if (vok_plinius2_button_wert == 1){
+            zu_bearbeiten = zu_bearbeiten.concat(plinius2);
+        }
         vokabel_abfrag_modus_starten();
     }
 }
@@ -646,6 +695,25 @@ function fabeln_ausklappen_einklappen(){
          }
         fabeln_button_wert = 0
         document.getElementById("button_fabeln").innerHTML = "Fabeln +";
+    }
+}
+
+//plinius +/-
+plinius_button_wert = 0
+
+function plinius_ausklappen_einklappen(){
+    if(plinius_button_wert == 0){
+        for (let element of document.getElementsByClassName("plinius")){
+            element.style.display="inline-block";
+        }
+        plinius_button_wert = 1
+        document.getElementById("button_plinius").innerHTML = "Plinius -";
+    }else{
+        for (let element of document.getElementsByClassName("plinius")){
+            element.style.display="none";
+         }
+        plinius_button_wert = 0
+        document.getElementById("button_plinius").innerHTML = "Plinius +";
     }
 }
 
